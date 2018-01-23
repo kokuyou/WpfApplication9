@@ -55,20 +55,7 @@ namespace WpfApplication2
         public MainWindow()
         {
             InitializeComponent();
-            _sensor = KinectSensor.GetDefault();
-
-            if (_sensor != null)
-            {
-                _sensor.Open();
-
-                _reader = _sensor.OpenMultiSourceFrameReader(FrameSourceTypes.Color | FrameSourceTypes.Depth | FrameSourceTypes.Infrared | FrameSourceTypes.Body);
-                _reader.MultiSourceFrameArrived += Reader_MultiSourceFrameArrived;
-
-                _playersController = new PlayersController();
-                _playersController.BodyEntered += UserReporter_BodyEntered;
-                _playersController.BodyLeft += UserReporter_BodyLeft;
-                _playersController.Start();
-            }
+            
         }
     }
 }
