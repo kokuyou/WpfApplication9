@@ -55,6 +55,7 @@ namespace WpfApplication2
         public MainWindow()
         {
             InitializeComponent();
+            
         }
     }
 }
