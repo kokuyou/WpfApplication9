@@ -51,13 +51,7 @@ namespace WpfApplication2
         JointType _center6 = JointType.KneeLeft;
         JointType _end6 = JointType.HipLeft;
 
-        /* JointType _start7 = JointType.SpineBase;
-         JointType _center7 = JointType.HipRight;
-         JointType _end7 = JointType.KneeRight;
-
-         JointType _start8 = JointType.SpineBase;
-         JointType _center8 = JointType.HipLeft;
-         JointType _end8 = JointType.KneeLeft;*/
+        
         public MainWindow()
         {
             InitializeComponent();
